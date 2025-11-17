@@ -53,12 +53,14 @@ const apps = createResource({
     ];
     data.map((app) => {
       if (app.name === "helpdesk") return;
-      _apps.push({
-        name: app.name,
-        logo: app.logo,
-        title: app.title,
-        route: app.route,
-      });
+      if (app.name === "crm") {
+        _apps.push({
+          name: app.name,
+          logo: app.logo,
+          title: app.title,
+          route: app.route,
+        });
+      }
     });
     return _apps;
   },

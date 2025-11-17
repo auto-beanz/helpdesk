@@ -109,7 +109,7 @@
         v-if="isFCSite && !isCustomerPortal"
         :isSidebarCollapsed="!isExpanded"
       />
-      <GettingStartedBanner
+      <!-- <GettingStartedBanner
         v-if="showOnboardingBanner"
         :isSidebarCollapsed="!isExpanded"
         appName="helpdesk"
@@ -125,7 +125,7 @@
             minimize = !showHelpModal;
           }
         "
-      />
+      /> -->
 
       <SidebarLink
         :icon="isExpanded ? LucideArrowLeftFromLine : LucideArrowRightFromLine"
@@ -140,7 +140,7 @@
       :isSidebarCollapsed="!isExpanded"
     />
     <SettingsModal v-model="showSettingsModal" />
-    <HelpModal
+    <!--<HelpModal
       v-if="showHelpModal"
       v-model="showHelpModal"
       v-model:articles="articles"
@@ -152,7 +152,7 @@
       :afterSkipAll="() => capture('onboarding_steps_skipped')"
       :afterReset="(step) => capture('onboarding_step_reset_' + step)"
       :afterResetAll="() => capture('onboarding_steps_reset')"
-    />
+    /> -->
     <IntermediateStepModal
       v-model="showIntermediateModal"
       :currentStep="currentStep"
@@ -301,9 +301,9 @@ const customerPortalDropdown = computed(() => [
 ]);
 
 const agentPortalDropdown = computed(() => [
-  {
-    component: markRaw(Apps),
-  },
+  //{
+  //  component: markRaw(Apps),
+  //},
   {
     label: "Customer portal",
     icon: "users",
@@ -312,16 +312,16 @@ const agentPortalDropdown = computed(() => [
       window.open(path.href);
     },
   },
-  {
-    icon: "life-buoy",
-    label: "Support",
-    onClick: () => window.open("https://t.me/frappedesk"),
-  },
-  {
-    icon: "book-open",
-    label: "Docs",
-    onClick: () => window.open("https://docs.frappe.io/helpdesk"),
-  },
+  // {
+  //   icon: "life-buoy",
+  //   label: "Support",
+  //   onClick: () => window.open("https://t.me/frappedesk"),
+  // },
+  // {
+  //   icon: "book-open",
+  //   label: "Docs",
+  //   onClick: () => window.open("https://docs.frappe.io/helpdesk"),
+  // },
   {
     label: "Login to Frappe Cloud",
     icon: FrappeCloudIcon,
