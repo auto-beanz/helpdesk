@@ -4,7 +4,7 @@ import LucideContact2 from "~icons/lucide/contact-2";
 import LucideTicket from "~icons/lucide/ticket";
 import { OrganizationsIcon } from "../icons";
 import PhoneIcon from "../icons/PhoneIcon.vue";
-import HDLogo from "@/assets/logos/HDLogo.vue";
+import CRMIcon from "../icons/CRMIcon.vue";
 
 export const agentPortalSidebarOptions = [
   {
@@ -39,7 +39,7 @@ export const agentPortalSidebarOptions = [
   },
   {
     label: "CRM",
-    icon: HDLogo,
+    icon: CRMIcon,
     onClick: () => {
       window.location.href = "/crm";
     },
