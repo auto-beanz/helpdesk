@@ -206,27 +206,27 @@ const customerPortalDropdown = computed(() => [
 ]);
 
 const agentPortalDropdown = computed(() => [
-  {
-    component: markRaw(Apps),
-  },
-  {
-    label: "Customer portal",
-    icon: "users",
-    onClick: () => {
-      const path = router.resolve({ name: "TicketsCustomer" });
-      window.open(path.href);
-    },
-  },
-  {
-    icon: "life-buoy",
-    label: "Support",
-    onClick: () => window.open("https://t.me/frappedesk"),
-  },
-  {
-    icon: "book-open",
-    label: "Docs",
-    onClick: () => window.open("https://docs.frappe.io/helpdesk"),
-  },
+  // {
+  //   component: markRaw(Apps),
+  // },
+  // {
+  //   label: "Customer portal",
+  //   icon: "users",
+  //   onClick: () => {
+  //     const path = router.resolve({ name: "TicketsCustomer" });
+  //     window.open(path.href);
+  //   },
+  // },
+  // {
+  //   icon: "life-buoy",
+  //   label: "Support",
+  //   onClick: () => window.open("https://t.me/frappedesk"),
+  // },
+  // {
+  //   icon: "book-open",
+  //   label: "Docs",
+  //   onClick: () => window.open("https://docs.frappe.io/helpdesk"),
+  // },
   {
     label: "Log out",
     icon: "log-out",
