@@ -304,14 +304,14 @@ const agentPortalDropdown = computed(() => [
   //{
   //  component: markRaw(Apps),
   //},
-  {
-    label: "Customer portal",
-    icon: "users",
-    onClick: () => {
-      const path = router.resolve({ name: "TicketsCustomer" });
-      window.open(path.href);
-    },
-  },
+  // {
+  //   label: "Customer portal",
+  //   icon: "users",
+  //   onClick: () => {
+  //     const path = router.resolve({ name: "TicketsCustomer" });
+  //     window.open(path.href);
+  //   },
+  // },
   // {
   //   icon: "life-buoy",
   //   label: "Support",
